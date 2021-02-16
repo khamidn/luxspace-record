@@ -24,7 +24,87 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <p>Hello World</p>
+    <!-- START: Header -->
+    <header class="absolute w-full z-50 px-4">
+      <div class="container mx-auto py-5">
+        <div class="flex flex-strecht items-center">
+          <div class="w-56 flex items-center">
+            <img src="images/content/logo.png" alt="Luxspace - Adalah sebuah website yang menjual barang-barang keren">    
+          </div>
+          <div class="w-full"></div>
+
+          <div class="w-auto">
+            <ul class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex">
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Showcase</a>
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Catalog</a>
+              </li>
+              <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Delivery</a>
+              </li>
+               <li class="mx-3 py-6 md:py-0">
+                <a href="#" class="text-black md:text-white hover:underline">Rewards</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="w-auto">
+            <ul class="flex items-center">
+              <li class="ml-6 block md:hidden">
+                <button 
+                  id="menu-toggler" 
+                  class="relative flex z-50 items-center justify-center w-8 h-8 text-black md:text-white focus:outline-none">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="fill-current feather feather-list">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                </button>
+              </li>
+              <li class="ml-6">
+                <a 
+                  href="cart.html"
+                  class="flex items-center justify-center w-8 h-8 text-black hover:text-white">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="24" 
+                      height="24" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      class="fill-current feather feather-shopping-cart">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+    </header>
+    <!-- END: Header -->
+    
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
