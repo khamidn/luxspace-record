@@ -267,10 +267,121 @@
                 </div>
               <!-- END: Item 1 -->
             <!-- END: Table Body -->
-            
           </div>
-          <!-- END: Shipping cart --> 
+          <!-- END: Shipping cart -->
+
           <!-- START: Shipping details -->
+          <div class="w-full md:px-4 md:w-4/12">
+            <div class="bg-gray-100 px-4 py-6 md:p-8 md:rounded-3xl ">
+              <form action="success.html">
+                <div class="flex flex-start mb-6">
+                  <h3 class="text-2xl">Shipping Details</h3>
+                </div>
+
+                <!-- START: input complete name -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2" for="complete-name">
+                    Complete Name
+                  </label>
+                  <input type="text" id="complete-name" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your name" /> 
+                </div>
+                <!-- END: input complete name -->
+
+                <!-- START: input email address -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2" for="email-address">
+                    Email Address
+                  </label>
+                  <input type="email" id="email-address" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your email address" /> 
+                </div>
+                <!-- END: input email address -->
+
+                <!-- START: input address -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2" for="address">
+                    Address
+                  </label>
+                  <input type="text" id="address" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your address" /> 
+                </div>
+                <!-- END: input address -->
+
+                <!-- START: input phone number -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2" for="phone-number">
+                    Phone Number
+                  </label>
+                  <input type="tel" id="phone-number" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your phone number" /> 
+                </div>
+                <!-- END: input phone number -->
+
+                <!-- START: Choose courier -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2">Choose courier</label>
+                  <div class="flex -mx-2 flex-wrap">
+                    <!-- START: kuri 1 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Kurir+1" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: kuri 1 -->
+                    <!-- START: kuri 2 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Kurir+2" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: kuri 2 -->
+                  </div>
+                </div>
+                <!-- END: Choose courier -->
+
+                <!-- START: Choose courier -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2">Choose payment</label>
+                  <div class="flex -mx-2 flex-wrap">
+                    <!-- START: payment 1 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Payment+1" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: payment 1 -->
+                    <!-- START: payment 2 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Payment+2" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: payment 2 -->
+                    <!-- START: payment 3 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Payment+3" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: payment 3 -->
+                    <!-- START: payment 4 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Payment+4" class="object-contain mx-h-full">
+                      </button>
+                    </div>
+                    <!-- END: payment 4 -->
+                  </div>
+                </div>
+                <!-- END: Choose payment -->
+
+                <div class="text-center">
+                  <button 
+                    class="bg-gray-300 text-gray-400 focus:bg-red-200 focus:outline-none w-full py-3 rounded-full text-lg focos:text-black transition-all duration-200 px-6"
+                    type="submit">
+                    Checkout now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
           <!-- END: Shipping details -->
         </div>
       </div>
@@ -279,7 +390,7 @@
 
     <!-- START: Aside Menu/Footer Menu -->
     <section class="">
-      <div class="border-b border-gray-200 py-12 px-4">
+      <div class="border-b border-t border-gray-200 py-12 px-4">
         <div class="flex justify-center mb-8">
           <img src="images/content/logo.png" 
           alt="Luxspace - Adalah sebuah website yang menjual barang-barang keren">
