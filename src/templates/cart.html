@@ -291,7 +291,7 @@
           <!-- END: Shipping cart -->
 
           <!-- START: Shipping details -->
-          <div class="w-full md:px-4 md:w-4/12">
+          <div class="w-full md:px-4 md:w-4/12" id="shipping-detail">
             <div class="bg-gray-100 px-4 py-6 md:p-8 md:rounded-3xl ">
               <form action="success.html">
                 <div class="flex flex-start mb-6">
@@ -303,7 +303,11 @@
                   <label class="text-sm mb-2" for="complete-name">
                     Complete Name
                   </label>
-                  <input type="text" id="complete-name" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your name" /> 
+                  <input 
+                    data-input
+                    type="text" 
+                    id="complete-name" 
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your name" /> 
                 </div>
                 <!-- END: input complete name -->
 
@@ -312,7 +316,11 @@
                   <label class="text-sm mb-2" for="email-address">
                     Email Address
                   </label>
-                  <input type="email" id="email-address" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your email address" /> 
+                  <input
+                    data-input 
+                    type="email" 
+                    id="email-address" 
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your email address" /> 
                 </div>
                 <!-- END: input email address -->
 
@@ -321,7 +329,11 @@
                   <label class="text-sm mb-2" for="address">
                     Address
                   </label>
-                  <input type="text" id="address" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your address" /> 
+                  <input 
+                    data-input
+                    type="text" 
+                    id="address" 
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your address" /> 
                 </div>
                 <!-- END: input address -->
 
@@ -330,7 +342,11 @@
                   <label class="text-sm mb-2" for="phone-number">
                     Phone Number
                   </label>
-                  <input type="tel" id="phone-number" class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your phone number" /> 
+                  <input
+                    data-input 
+                    type="tel" 
+                    id="phone-number" 
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none" placeholder="Input your phone number" /> 
                 </div>
                 <!-- END: input phone number -->
 
@@ -340,15 +356,23 @@
                   <div class="flex -mx-2 flex-wrap">
                     <!-- START: kuri 1 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Kurir+1" class="object-contain mx-h-full">
+                      <button
+                        data-value="fedex"
+                        data-name="courier" 
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Fedex" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: kuri 1 -->
                     <!-- START: kuri 2 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Kurir+2" class="object-contain mx-h-full">
+                      <button 
+                        data-value="dhl"
+                        data-name="courier"
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=DHL" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: kuri 2 -->
@@ -362,29 +386,45 @@
                   <div class="flex -mx-2 flex-wrap">
                     <!-- START: payment 1 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Payment+1" class="object-contain mx-h-full">
+                      <button
+                        data-value="midtrans"
+                        data-name="payment" 
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Midtrans" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: payment 1 -->
                     <!-- START: payment 2 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Payment+2" class="object-contain mx-h-full">
+                      <button 
+                        data-value="mastercard"
+                        data-name="payment" 
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Master Card" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: payment 2 -->
                     <!-- START: payment 3 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Payment+3" class="object-contain mx-h-full">
+                      <button 
+                        data-value="bitcoin"
+                        data-name="payment" 
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=Bitcoin" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: payment 3 -->
                     <!-- START: payment 4 -->
                     <div class="px-2 w-6/12 h-24 mb-4">
-                      <button type="button" class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
-                        <img src="https://via.placeholder.com/115x60?text=Payment+4" class="object-contain mx-h-full">
+                      <button 
+                        data-value="american-express"
+                        data-name="payment" 
+                        type="button" 
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="https://via.placeholder.com/115x60?text=American Express" class="object-contain mx-h-full">
                       </button>
                     </div>
                     <!-- END: payment 4 -->
@@ -393,8 +433,10 @@
                 <!-- END: Choose payment -->
 
                 <div class="text-center">
-                  <button 
-                    class="bg-gray-300 text-gray-400 focus:bg-red-200 focus:outline-none w-full py-3 rounded-full text-lg focos:text-black transition-all duration-200 px-6"
+                  <button
+                    type="submit"
+                    disabled 
+                    class="bg-pink-400 text-black focus:bg-black focus:outline-none w-full py-3 rounded-full text-lg focus:text-pink-400 transition-all duration-200 px-6"
                     type="submit">
                     Checkout now
                   </button>
